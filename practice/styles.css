@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+/* Product Section */
+.product-support {
+  padding: 40px 20px;
+}
+
+.product-support h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Product Container */
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Product Card */
+.product-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  justify-content: space-between; /* Space between children */
+  height: auto; /* Set a fixed height for uniformity */
+  text-align: start;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+/* Product Image */
+.product-card img {
+  width: 100%; /* Make image responsive */
+  height: auto;
+  margin-bottom: 10px;
+  
+}
+
+/* Product Title */
+.product-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Product Description */
+.product-card p {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 15px;
+  text-decoration: none;
+  font-size: 15px;
+  width: 120px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
