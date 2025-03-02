@@ -1,9 +1,8 @@
+/* General Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  background-color: #f9f9f9;
-  text-align: center;
+  background-color: # f9f9f9;
 }
 
 /* Product Section */
@@ -11,31 +10,26 @@ body {
   padding: 40px 20px;
 }
 
-.product-support h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-/* Product Container */
+/* Center the product container and set a max width */
 .product-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  max-width: 1200px; /* Set a max width for the container */
+  margin: 0 auto; /* Center the container */
 }
 
 /* Product Card */
 .product-card {
+  display: flex; /* Use flexbox for horizontal layout */
+  justify-content: space-between; /* Space between text and image */
+  align-items: center; /* Center items vertically */
   background-color: white;
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  width: 300px;
-  display: flex;
-  flex-direction: column; /* Stack children vertically */
-  justify-content: space-between; /* Space between children */
-  height: auto; /* Set a fixed height for uniformity */
-  text-align: start;
+  width: 300px; /* Fixed width for product cards */
   transition: transform 0.3s ease-in-out;
 }
 
@@ -43,23 +37,32 @@ body {
   transform: scale(1.05);
 }
 
+/* Text Container */
+.text-container {
+  flex: 1; /* Allow text container to take available space */
+  margin-right: 20px; /* Space between text and image */
+}
+
+/* Image Container */
+.image-container {
+  flex-shrink: 0; /* Prevent the image container from shrinking */
+}
+
 /* Product Image */
 .product-card img {
-  width: 100%; /* Make image responsive */
+  width: 100px; /* Adjust as needed */
   height: auto;
-  margin-bottom: 10px;
-  
 }
 
 /* Product Title */
 .product-card h3 {
-  font-size: 24px;
+  font-size: 18px;
   margin-bottom: 10px;
 }
 
 /* Product Description */
 .product-card p {
-  font-size: 15px;
+  font-size: 14px;
   color: #555;
   margin-bottom: 15px;
 }
@@ -70,12 +73,9 @@ body {
   background-color: #007bff;
   color: white;
   padding: 8px 16px;
-  border-radius: 15px;
+  border-radius: 5px;
   text-decoration: none;
-  font-size: 15px;
-  width: 120px;
   transition: background-color 0.3s ease;
-  text-align: center;
 }
 
 .btn:hover {
