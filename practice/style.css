@@ -16,12 +16,14 @@ body {
 
 .menu-item {
     border-bottom: 1px solid #eee;
+
 }
 
 .menu-header {
     display: flex;
     align-items: center;
-    padding: 15px 20px;
+    padding: 40px 20px;
+    min-height: 60px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
@@ -36,6 +38,7 @@ body {
     height: 24px;
 }
 
+
 .printer-icon {
     color: #2c3e50;
 }
@@ -45,16 +48,22 @@ body {
 }
 
 .mac-icon {
+
     color: #777;
 }
 
 .mobile-icon {
+
     color: #555;
+
 }
 
+
 .menu-title {
+    margin-left: 10px;
     flex-grow: 1;
-    font-size: 18px;
+    font-size: 30px;
+    font-weight: bold;
     color: #2c3e50;
 }
 
@@ -132,39 +141,54 @@ body {
 }
 
 .video-modal {
-    display: none;
+    display: none; /* Hidden by default */
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 70vw;
+     top: 45%;
+     left: 45%;
+     transform: translate(-50%, -50%);
+    width: 80vw;
     height: 70vh;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    z-index: 1000; /* Ensure it's on top */
     justify-content: center;
     align-items: center;
 }
 
 .modal-content {
-    width: 90%;
-    height: 90%;
     position: relative;
+    width: 100%; /* Set the modal to take up 90% of the screen width */
+    height: 100%; /* Set the modal to take up 90% of the screen height */
+    background-color: black;
+    padding: 50px;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 
 .close-modal {
     position: absolute;
-    top: 50px;
-    right: 50px;
-    color: red;
-    font-size: 50px;
-    cursor: pointer;
-    z-index: 2000;
-}
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
 
+    color: red;
+    cursor: pointer;
+    z-index: 2000; /* Ensure the close button is above the content */
+}
+#videoContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#youtubeIframe {
+    width: 100%;
+    height: 100%;
+}
 
 .video-player {
     width: 90%;
